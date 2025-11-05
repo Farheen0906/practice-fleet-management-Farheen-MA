@@ -16,8 +16,9 @@ Tasks
 and mileage.
 ○ Use default values for mileage (e.g., 0).
 */
-
+//creating the class Vehicle
 class Vehicle{
+// Defining constructor with parameters and default values
   constructor(type, make, model, year, mileage = 0){
      this.type = type;
      this.make = make;
@@ -32,9 +33,11 @@ distance (in kilometers or miles).
 ○ getDetails(): Returns a formatted string describing the vehicle’s
 details.
 */
+  //defining drive() method to update the mileage every time it is called
 drive(distance){
     this.mileage= this.mileage + distance;
 }
+  // defining getDetails to print the vehicle details to user
 getDetails(){
   return `{ type: ${this.type}, make: ${this.make}, model:${this.model}, year:${this.year}, mileage:${this.mileage}}`;
 }
@@ -55,11 +58,11 @@ let vehicle2 = new Vehicle('Sedan', 'Honda', 'Accord', 2020, 1200);
 let vehicle3 = new Vehicle('Truck', 'Ford', 'F-150', 2022, 1300);
 //calling drive() method on vehicle1
 vehicle1.drive(1150);
-//assessing the mileage property using "." notation
+//accessing the mileage property using "." dot notation
 console.log("Vehicle-1 Current Mileage " + vehicle1.mileage); //output:2250
 //calling drive() method on vehicle2
 vehicle2.drive(4000);
-//assessing the mileage property using "." notation
+//accessing the mileage property using "." dot notation
 console.log("Vehicle-2 Current Mileage " + vehicle2.mileage); //output:5200
 //Accessing getDetails() method to print vehicle 2 details
 console.log("Vehicle-2 details:" + vehicle2.getDetails());
