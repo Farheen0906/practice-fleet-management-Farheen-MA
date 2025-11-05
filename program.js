@@ -38,7 +38,7 @@ drive(distance){
 getDetails(){
   return `{ type: ${this.type}, make: ${this.make}, model:${this.model}, year:${this.year}, mileage:${this.mileage}}`;
 }
-
+}
 /*
 3. Create and Use Vehicle Objects:
 ○ Instantiate at least three vehicle objects with different properties (e.g.,
@@ -47,7 +47,6 @@ a car, a truck, and a motorcycle).
 ○ Use the getDetails method to print each vehicle’s updated
 information.
 */
-}
 //Instantiating first object vehicle
 let vehicle1 = new Vehicle('SUV', 'Toyota', 'Sequoia', 2018, 1100);
 //Instantiating second object vehicle
